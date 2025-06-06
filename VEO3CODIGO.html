@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia VEO 3</title>
+    <link rel="icon" type="image/jpg" href="Logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-animado {
+      background: linear-gradient(to bottom, #020617, #0f172a, #0b1120);
+      background-size: cover;
+    }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out both;
+    }
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-out forwards;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+  
+    .animated-gradient {
+      background: linear-gradient(270deg, #facc15, #f97316, #ef4444);
+      background-size: 600% 600%;
+      animation: gradientShift 10s ease infinite;
+    }
+  </style>
+</head>
+<body class="text-white bg-animado">
+
+
+<!-- PROVA SOCIAL VISUAL FIXA -->
+<div id="provaSocial" class="fixed bottom-4 left-4 z-50 bg-black/80 backdrop-blur-md text-white text-sm px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 animate-fade-in">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400 animate-pulse" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"/>
+  </svg>
+  <span><strong class="text-green-300">+2.000 alunos</strong> já lucrando com IA e vídeos virais!</span>
+  <button onclick="document.getElementById('provaSocial').style.display='none'" class="text-gray-400 hover:text-red-500 text-lg font-bold ml-2 leading-none">×</button>
+</div>
+
+
+<!-- POP-UP DE ESCASSEZ CORRIGIDO -->
+<div class="fixed top-3 left-1/2 transform -translate-x-1/2 z-[9999] bg-white/10 backdrop-blur-md border border-blue-500 text-white text-sm px-6 py-3 rounded-full shadow-xl animate-pulse">
+  ⏳ <span class="font-semibold">12 pessoas</span> estão vendo esta página agora!
+</div>
+
+
+  <!-- HEADER FIXO -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-sm border-b border-gray-800 px-6 py-3 flex justify-between items-center">
+    <h1 class="text-white font-bold text-lg">Guia VEO 3</h1>
+    <a href="#oferta" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold">Quero Acessar</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 fade-in-up text-center max-w-4xl mx-auto px-4">
+    <h1 class="text-4xl md:text-6x2 font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Como ganhar mais de R$ 10.000 por mês com videos de IA virais</h1>
+    <p class="text-xl text-gray-300 mb-4">Transforme seu conhecimento em renda criando vídeos virais com a nova ferramenta</p>
+    <p class="text-blue-400 font-medium text-lg mb-6 animate-pulse">Assista esse vídeo de 1 minuto e descubra como transformar vídeos em dinheiro com IA!</p>
+    <div class="max-w-3xl mx-auto rounded-xl overflow-hidden shadow-2xl shadow-blue-500/10 mb-10">
+      <video src="VideoTesteSite.mp4" controls playsinline class="w-full h-auto rounded-xl"></video>
+    </div>
+    <a href="#oferta" class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white px-10 py-5 rounded-lg text-2xl font-bold shadow-xl hover:scale-105 transition-all duration-300 animate-pulse">Quero Acessar Agora</a>
+  </section>
+
+  <!-- CONFIANÇA -->
+  <section class="text-center mb-10">
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-blue-600 text-sm text-white shadow-sm backdrop-blur-sm animate-pulse hover:animate-none transition-all duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V7a4 4 0 10-8 0v4M6 11v10h12V11M6 15h12" />
+      </svg>
+      <span class="font-semibold tracking-wide">Ambiente 100% Seguro</span>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section class="text-center fade-in-up mb-24 px-4">
+    <img src="Garantia7.webp" alt="Selo de Garantia" class="mx-auto mb-6 w-64 h-auto" />
+    <h2 class="text-4xl font-bold mb-4">Garantia Incondicional de <span class="text-yellow-400">7 Dias</span></h2>
+    <p class="text-gray-300 text-lg max-w-2xl mx-auto">Teste o Guia VEO 3 por uma semana, sem riscos. Se não gostar ou não ver resultado, devolvemos <span class="text-white font-semibold">100% do seu dinheiro</span>, sem perguntas.</p>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="oferta" class="fade-in-up py-24 px-4">
+    <div class="max-w-6xl mx-auto text-center bg-black/50 backdrop-blur-sm rounded-2xl p-10 shadow-xl">
+      <h2 class="text-4xl font-extrabold mb-10">Escolha Seu Pacote</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800/80 backdrop-blur-md p-8 rounded-xl hover:ring-2 hover:ring-blue-400 transition-all">
+          <h3 class="text-2xl font-bold mb-4">Pacote Essencial</h3>
+          <ul class="text-left text-sm text-gray-300 mb-4 space-y-2">
+            <li>🚀 Ebook Completo</li>
+            <li>❌ Banco de IAs com utilidades práticas</li>
+            <li>❌ Módulo de Tráfego Pago & Orgânico</li>
+            <li>❌ Mentoria com Especialistas</li>
+          </ul>
+          <p class="text-3xl text-blue-400 font-bold mb-6">R$19,90</p>
+          <a href="https://www.google.com" target="_blank"
+  class="inline-block w-full text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-md hover:scale-105 hover:shadow-blue-400/40 transition-all duration-300">
+  Quero Começar Agora!
+</a>
+               </div>
+        <div class="bg-gradient-to-br from-blue-700 via-blue-800 to-blue-900 backdrop-blur-md p-10 rounded-xl border-4 border-yellow-300 scale-105 shadow-lg text-white transition-transform duration-300 hover:scale-105">
+          <h3 class="text-3xl font-bold mb-4">Pacote Completo + Mentoria</h3>
+          <ul class="text-left text-sm text-white mb-4 space-y-2">
+            <li>🚀 Ebook Completo</li>
+            <li>🤖 Banco de IAs com utilidades práticas</li>
+            <li>📊 Módulo de Tráfego Pago & Orgânico</li>
+            <li>🧠 Mentoria com Especialistas</li>
+          </ul>
+          <p class="text-4xl text-yellow-300 font-extrabold mb-6">R$49,90</p>
+          <a href="https://www.google.com" target="_blank"
+  class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 text-black font-bold py-3 px-8 rounded-full shadow-xl shadow-yellow-500/40 border-2 border-yellow-300 animate-pulse hover:animate-none hover:scale-105 hover:shadow-orange-500/50 transition-all duration-300 ease-in-out">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-800" viewBox="0 0 20 20" fill="currentColor">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.946a1 1 0 00.95.69h4.148c.969 0 1.371 1.24.588 1.81l-3.36 2.444a1 1 0 00-.364 1.118l1.287 3.946c.3.921-.755 1.688-1.538 1.118l-3.36-2.444a1 1 0 00-1.176 0l-3.36 2.444c-.783.57-1.838-.197-1.538-1.118l1.287-3.946a1 1 0 00-.364-1.118L2.077 9.373c-.783-.57-.38-1.81.588-1.81h4.148a1 1 0 00.95-.69l1.286-3.946z" />
+  </svg>
+  Quero Acesso Total!
+</a>
+
+
+               </div>
+        <div class="bg-gray-800/80 backdrop-blur-md p-8 rounded-xl hover:ring-2 hover:ring-blue-400 transition-all">
+          <h3 class="text-2xl font-bold mb-4">Pacote Pro IA</h3>
+          <ul class="text-left text-sm text-gray-300 mb-4 space-y-2">
+            <li>🚀 Ebook Completo</li>
+            <li>🤖 Banco de IAs com utilidades práticas</li>
+            <li>❌ Módulo de Tráfego Pago & Orgânico</li>
+            <li>❌ Mentoria com Especialistas</li>
+            
+          </ul>
+          <p class="text-3xl text-blue-400 font-bold mb-6">R$34,90</p>
+          <a href="https://www.google.com" target="_blank"
+          class="inline-block w-full text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-md hover:scale-105 hover:shadow-blue-400/40 transition-all duration-300">
+          Quero Desbloquear as IAs!
+        </a>
+               </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SELO DE ACESSO VITALÍCIO -->
+<section class="py-12 px-6 fade-in-up">
+  <div class="max-w-4xl mx-auto bg-white/5 border border-blue-700 backdrop-blur-lg rounded-2xl shadow-md p-6 text-center">
+    <div class="flex flex-col items-center gap-4">
+      <div class="bg-blue-800/70 p-4 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2a10 10 0 0110 10 10.05 10.05 0 01-2.18 6.34L12 22l-7.82-3.66A10.05 10.05 0 012 12a10 10 0 0110-10zm0 2a8 8 0 00-8 8c0 2.04.76 3.9 2 5.31V12a6 6 0 0112 0v5.31A8 8 0 0020 12a8 8 0 00-8-8zm0 4a4 4 0 00-4 4v6h8v-6a4 4 0 00-4-4z" />
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold text-white">Acesso Vitalício + Atualizações Inclusas</h3>
+      <p class="text-gray-300 text-lg max-w-xl">
+        Pague uma única vez e tenha acesso para sempre, incluindo futuras atualizações e novos conteúdos que forem adicionados no curso.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- QUEM DEVE COMPRAR-->
+<section class="py-24 px-6 fade-in-up">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Quem Deve Comprar Este Guia</h2>
+    <p class="text-gray-300 mb-12 text-lg max-w-2xl mx-auto">
+      Se você se encaixa em algum desses perfis, este guia foi feito sob medida para você:
+    </p>
+    <div class="grid md:grid-cols-2 gap-6 text-left text-white">
+      
+      <!-- Iniciantes -->
+      <div class="bg-white/5 p-6 rounded-xl border border-blue-600 backdrop-blur-md">
+        <div class="flex items-center gap-3 mb-3">
+          <svg class="h-6 w-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 6.75v-.375a3.375 3.375 0 00-6.75 0v.375m0 0H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-1.5zm0 0v1.5" />
+          </svg>
+          <h3 class="text-xl font-semibold">Iniciantes que querem fazer renda extra</h3>
+        </div>
+        <p class="text-gray-300">Mesmo sem experiência em vídeos ou tecnologia, você vai aprender do zero a ganhar dinheiro com vídeos virais.</p>
+      </div>
+
+      <!-- Freelancers -->
+      <div class="bg-white/5 p-6 rounded-xl border border-blue-600 backdrop-blur-md">
+        <div class="flex items-center gap-3 mb-3">
+          <svg class="h-6 w-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 3.75h4.5m-2.25 0v16.5m-9-4.5h18" />
+          </svg>
+          <h3 class="text-xl font-semibold">Freelancers e Profissionais Criativos</h3>
+        </div>
+        <p class="text-gray-300">Se você já trabalha com design, social media, edição ou tráfego — este guia vai multiplicar seu faturamento.</p>
+      </div>
+
+      <!-- Empreendedores -->
+      <div class="bg-white/5 p-6 rounded-xl border border-blue-600 backdrop-blur-md">
+        <div class="flex items-center gap-3 mb-3">
+          <svg class="h-6 w-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 12h15m-7.5-7.5v15" />
+          </svg>
+          <h3 class="text-xl font-semibold">Empreendedores e Donos de Negócio</h3>
+        </div>
+        <p class="text-gray-300">Descubra como usar a IA e os vídeos certos para atrair clientes e escalar seu negócio digital.</p>
+      </div>
+
+      <!-- Pessoas que querem liberdade -->
+      <div class="bg-white/5 p-6 rounded-xl border border-blue-600 backdrop-blur-md">
+        <div class="flex items-center gap-3 mb-3">
+          <svg class="h-6 w-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l-2 2m6 11V6l2 2" />
+          </svg>
+          <h3 class="text-xl font-semibold">Pessoas que querem liberdade financeira</h3>
+        </div>
+        <p class="text-gray-300">O passo a passo para criar sua renda online usando o poder da inteligência artificial e vídeos virais.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO COMPARATIVO -->
+<section class="py-20 px-6 fade-in-up">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Vale Mais do que Tentar Sozinho</h2>
+    <p class="text-gray-300 mb-10">Compare o que você ganha com o Guia VEO 3 vs. tentar descobrir tudo por conta própria:</p>
+    <div class="grid md:grid-cols-2 gap-6 text-left">
+      <!-- Com Guia VEO 3 -->
+      <div class="bg-blue-900/40 border border-blue-600 p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-bold text-blue-300 mb-4">✅ Com o Guia VEO 3</h3>
+        <ul class="space-y-3 text-gray-200">
+          <li>✔️ Estratégia pronta validada</li>
+          <li>✔️ Economia de meses de tentativa e erro</li>
+          <li>✔️ Suporte com mentoria</li>
+          <li>✔️ IA trabalhando por você</li>
+          <li>✔️ Investimento baixo com retorno rápido</li>
+        </ul>
+      </div>
+      <!-- Tentando Sozinho -->
+      <div class="bg-gray-900/40 border border-gray-700 p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold text-red-300 mb-4">❌ Tentando Sozinho</h3>
+        <ul class="space-y-3 text-gray-400">
+          <li>❌ Sem direção clara</li>
+          <li>❌ Meses ou anos testando no escuro</li>
+          <li>❌ Sem ajuda de quem já chegou lá</li>
+          <li>❌ Faz tudo manual e demora mais</li>
+          <li>❌ Pode desistir sem ver resultados</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- O QUE VOCÊ VAI RECEBER -->
+   <section class="fade-in-up py-24 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-white">O Que Você Vai Receber</h2>
+      <p class="text-gray-300 mb-12 text-lg">
+        Benefícios exclusivos que acompanham o acesso ao programa completo.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600/20 mb-4 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 8H7a2 2 0 01-2-2V6a2 2 0 012-2h4l2 2h6a2 2 0 012 2v10a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-white">Guia Completo VEO</h3>
+          <p class="text-gray-400 text-sm">PDF detalhado com todos os passos e estratégias para lucrar com vídeos de IA.</p>
+        </div>
+  
+        <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600/20 mb-4 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14m0-4v4m0-4L9 6m6 4L9 14" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-white">Banco de IAs</h3>
+          <p class="text-gray-400 text-sm">Acesso às melhores ferramentas de inteligência artificial testadas e aprovadas.</p>
+        </div>
+  
+        <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600/20 mb-4 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0V4m0 16h-4m4 0h-4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-white">Mentoria Especial</h3>
+          <p class="text-gray-400 text-sm">Encontros gravados com especialistas mostrando os bastidores de campanhas reais.</p>
+        </div>
+      </div>
+  
+      <!-- Botão abaixo -->
+      <div class="text-center mt-12">
+        <a href="#oferta" class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white px-10 py-4 rounded-lg text-xl font-bold shadow-lg hover:scale-105 transform transition-all duration-300">
+          Quero Acessar Agora
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+
+ <!-- O QUE VOCÊ VAI APRENDER -->
+ <section class="fade-in-up py-24 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-white">O Que Você Vai Aprender</h2>
+    <p class="text-gray-300 mb-12 text-lg">Um guia completo dividido em módulos práticos e objetivos</p>
+
+    <div class="space-y-6 max-w-3xl mx-auto text-left">
+      <div class="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10 hover:scale-[1.01] transition">
+        <div class="text-blue-400">
+          <svg class="h-6 w-6 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-white mb-1">MÓDULO 1: A REVOLUÇÃO DO DINHEIRO RÁPIDO COM O VEO3</h3>
+          <p class="text-gray-400 text-sm">Descubra os princípios por trás dos vídeos virais e como a IA revolucionou este mercado em 2025.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10 hover:scale-[1.01] transition">
+        <div class="text-blue-400">
+          <svg class="h-6 w-6 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14m0-4v4m0-4L9 6m6 4L9 14" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-white mb-1">MÓDULO 2: O PODER DOS CRIATIVOS QUE VENDEM</h3>
+          <p class="text-gray-400 text-sm">Use IA para produzir vídeos virais em minutos, mesmo sem conhecimento técnico ou equipamentos caros.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10 hover:scale-[1.01] transition">
+        <div class="text-blue-400">
+          <svg class="h-6 w-6 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c.786 0 1.538.208 2.204.571M12 8a4 4 0 00-4 4m0 0a4 4 0 004 4m0 0a4 4 0 004-4m0 0a4 4 0 00-4-4z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-white mb-1">MÓDULO 3: PREPARANDO O TERRENO - O VEO3 EM AÇÃO</h3>
+          <p class="text-gray-400 text-sm">Domine as plataformas que pagam melhor e otimize o conteúdo para cada uma.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10 hover:scale-[1.01] transition">
+        <div class="text-blue-400">
+          <svg class="h-6 w-6 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-white mb-1">MÓDULO 4: PROMPTS PODEROSOS PARA CRIATIVOS QUE CONVERTEM</h3>
+          <p class="text-gray-400 text-sm">Converta visualizações em dinheiro com afiliados, produtos próprios e estratégias de funil.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10 hover:scale-[1.01] transition">
+        <div class="text-blue-400">
+          <svg class="h-6 w-6 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-white mb-1">MÓDULO 5: ESTRATÉGIAS PARA IMPULSIONAR SEUS CRIATIVOS E SUAS VENDAS</h3>
+          <p class="text-gray-400 text-sm">Aprenda a escalar seu negócio digital usando IA para gerar renda automática.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão abaixo -->
+    <div class="text-center mt-12">
+      <a href="#oferta" class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white px-10 py-4 rounded-lg text-xl font-bold shadow-lg hover:scale-105 transform transition-all duration-300">
+        Quero Acessar Agora
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="fade-in-up py-24 px-6 bg-gradient-to-b from-black/80 to-gray-900/60">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+
+
+    
+    
+    <!-- TEXTO -->
+    <div class="flex-1 text-left">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        O Guia Definitivo Para Lucrar Com Vídeos e IA em <span class="text-blue-500">2025</span>
+      </h2>
+
+      <ul class="space-y-4 text-gray-300 text-base">
+        <li class="flex items-start gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+          </svg>
+          <strong>30 páginas</strong> de conteúdo prático direto ao ponto
+        </li>
+        <li class="flex items-start gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+          </svg>
+          Banco de <strong>ferramentas exclusivas</strong> de IA para criação de vídeos
+        </li>
+        <li class="flex items-start gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+          </svg>
+          <strong>Estratégias atualizadas</strong> para todas as melhores plataformas
+        </li>
+        <li class="flex items-start gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+          </svg>
+          Métodos que funcionam mesmo para <strong>iniciantes completos</strong>
+        </li>
+      </ul>
+    </div>
+
+    <!-- IMAGEM GUIA -->
+    <div class="flex-1 flex justify-center">
+      <div class="bg-blue-600/90 text-white p-6 rounded-xl shadow-2xl w-72 rotate-[2deg] hover:rotate-0 transition-transform duration-500">
+        <div class="flex items-center gap-2 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l9-5-9-5-9 5 9 5z" />
+          </svg>
+          <span class="text-sm uppercase tracking-wide">Guia VEO 3</span>
+        </div>
+        <h3 class="text-xl font-bold leading-tight mb-2">Como Lucrar com Vídeos Virais e IA em 2025</h3>
+        <p class="text-sm text-blue-100">1ª Edição • 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+ <!-- COMENTÁRIOS COM ESTRELAS E PERFIL -->
+<section class="fade-in-up py-24 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-12">O que estão dizendo...</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-left text-gray-200">
+      
+      <!-- João -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full" alt="João M.">
+          <div>
+            <p class="font-bold text-yellow-300">João M.</p>
+            <div class="text-yellow-400 text-sm">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+        <p>“Simplesmente incrível! Comecei do zero e já estou vendendo com IA!”</p>
+      </div>
+
+      <!-- Camila -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-12 h-12 rounded-full" alt="Camila R.">
+          <div>
+            <p class="font-bold text-yellow-300">Camila R.</p>
+            <div class="text-yellow-400 text-sm">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+        <p>“O melhor investimento que fiz este ano. Vale cada centavo.”</p>
+      </div>
+
+      <!-- Felipe -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/67.jpg" class="w-12 h-12 rounded-full" alt="Felipe T.">
+          <div>
+            <p class="font-bold text-yellow-300">Felipe T.</p>
+            <div class="text-yellow-400 text-sm">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+        <p>“Muito conteúdo valioso. A mentoria fez toda a diferença!”</p>
+      </div>
+<!-- Comentário 4 -->
+<div class="bg-gray-800 p-6 rounded-lg text-sm text-white shadow-lg flex flex-col gap-3">
+  <div class="flex items-center gap-4">
+    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Diego F." class="w-10 h-10 rounded-full object-cover">
+    <div>
+      <p class="font-bold text-yellow-300">Diego F.</p>
+      <p class="text-yellow-400 text-xs">★★★★★</p>
+    </div>
+  </div>
+  <p>Mano... se eu soubesse disso antes, já tava rico kkkkk. Muito bom mesmo!</p>
+</div>
+
+<!-- Comentário 5 -->
+<div class="bg-gray-800 p-6 rounded-lg text-sm text-white shadow-lg flex flex-col gap-3">
+  <div class="flex items-center gap-4">
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Bruna L." class="w-10 h-10 rounded-full object-cover">
+    <div>
+      <p class="font-bold text-yellow-300">Bruna L.</p>
+      <p class="text-yellow-400 text-xs">★★★★★</p>
+    </div>
+  </div>
+  <p>Comprei achando que ia ser mais do mesmo... me surpreendi demais! 😍</p>
+</div>
+
+<!-- Comentário 6 -->
+<div class="bg-gray-800 p-6 rounded-lg text-sm text-white shadow-lg flex flex-col gap-3">
+  <div class="flex items-center gap-4">
+    <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="Lucas T." class="w-10 h-10 rounded-full object-cover">
+    <div>
+      <p class="font-bold text-yellow-300">Lucas T.</p>
+      <p class="text-yellow-400 text-xs">★★★★★</p>
+    </div>
+  </div>
+  <p>Simples, direto, sem enrolação. Já tô aplicando e vendo resultado 👊</p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ -->
+  <section class="fade-in-up py-24 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Perguntas Frequentes</h2>
+      <div class="space-y-4 text-gray-300">
+        <details class="bg-gray-800 p-4 rounded-md cursor-pointer open:bg-gray-700 transition-all">
+          <summary class="font-semibold">Preciso saber editar vídeos?</summary>
+          <p class="mt-2">Não! Tudo é explicado para iniciantes e pode ser feito pelo celular.</p>
+        </details>
+        <details class="bg-gray-800 p-4 rounded-md cursor-pointer open:bg-gray-700 transition-all">
+          <summary class="font-semibold">Como recebo o acesso?</summary>
+          <p class="mt-2">Você recebe imediatamente no seu email após a confirmação do pagamento.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTÃO FLOTANTE -->
+  <a href="#oferta" class="fixed bottom-5 right-5 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full shadow-xl z-50">
+    👇 Quero Garantir Meu Acesso
+  </a>
+
+
+  <!-- CHAMADA FINAL (CTA FIXO OU ÚLTIMA CHANCE) -->
+  <section class="animated-gradient rounded-xl p-10 text-center max-w-3xl mx-auto text-black shadow-xl">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 flex items-center justify-center gap-2">
+      ⚡ Última Chance para Garantir o Acesso com Bônus
+    </h2>
+    <p class="text-md md:text-lg mb-6">
+      Depois que sair dessa página, os bônus podem não estar mais disponíveis.
+    </p>
+    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"
+       class="inline-block px-8 py-4 bg-black text-yellow-400 font-extrabold text-lg rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+      Quero Começar Agora com Tudo
+    </a>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="w-full bg-gray-950 text-center text-sm text-gray-400 py-8 mt-16 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-center gap-6 mb-4 text-blue-500 flex-wrap">
+        <div class="flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V7a4 4 0 10-8 0v4M6 11v10h12V11M6 15h12" />
+          </svg> Pagamento 100% Seguro
+        </div>
+        <div class="flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zm-8 0c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4z" />
+          </svg> Proteção SSL
+        </div>
+      </div>
+      <p class="mb-2">© 2025 Guia VEO 3. Todos os direitos reservados.</p>
+      <div class="flex justify-center gap-4 mb-2 text-gray-300 flex-wrap">
+        <a href="#" class="hover:underline">Termos de Uso</a>
+        <a href="#" class="hover:underline">Política de Privacidade</a>
+        <a href="#" class="hover:underline">Contato</a>
+      </div>
+      <p class="text-xs px-4 max-w-xl mx-auto">
+        Este site não é afiliado ao Facebook, Google, YouTube ou qualquer outra plataforma mencionada. Os resultados apresentados não são típicos e dependem de diversos fatores individuais.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Mostrar pop-up após 5 segundos
+    setTimeout(() => {
+      document.getElementById("popup-oferta").classList.remove("hidden");
+    }, 5000);
+  
+    // Timer de 15 minutos
+    let tempoRestante = 15 * 60;
+    const popupTimer = document.getElementById("popup-timer");
+  
+    function atualizarPopupTimer() {
+      const minutos = Math.floor(tempoRestante / 60);
+      const segundos = tempoRestante % 60;
+      popupTimer.innerText = `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+      if (tempoRestante > 0) tempoRestante--;
+    }
+  
+    setInterval(atualizarPopupTimer, 1000);
+    atualizarPopupTimer();
+
+    setTimeout(() => {
+      const prova = document.getElementById('provaSocial');
+      if (prova) prova.style.display = 'none';
+    }, 10000); // 10 segundos
+  </script>
+  
+</body>
+</html>
